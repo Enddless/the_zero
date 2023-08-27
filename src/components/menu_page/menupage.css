@@ -1,0 +1,55 @@
+.all-menu {
+  background: url("./image1.png") no-repeat;
+  padding-top: 208px;
+}
+.all-menu .all-menu__title,
+.all-menu .all-menu__subtitle {
+  color: #fff;
+  grid-column: span 12;
+}
+.all-menu .all-menu__title {
+  grid-row: 1;
+  padding-top: 142px;
+  padding-bottom: 50px;
+}
+.all-menu .all-menu__subtitle {
+  grid-row: 2;
+  padding-bottom: 511px;
+}
+.all-menu .all-menu__table {
+  grid-column: span 12;
+  grid-row: 3;
+  background: url("./Blueberry.svg") no-repeat;
+  background-position: right top;
+}
+.all-menu .all-menu__table .category-menu {
+  padding: 0;
+}
+.all-menu .all-menu__table .category-menu:nth-child(3) {
+  background: url("./Avocado.svg") no-repeat;
+  background-position: right top;
+}
+.all-menu .all-menu__table .category-menu .category-menu__title,
+.all-menu .all-menu__table .category-menu .category-menu__subtitle {
+  grid-column: span 12;
+  text-align: center;
+  margin: 38px 0 18px;
+}
+.all-menu .all-menu__table .category-menu .category-menu__subtitle {
+  margin: 0 0 118px;
+}
+.all-menu .all-menu__table .category-menu .category-menu__content {
+  grid-column: span 12;
+  padding: 82px 0 82px;
+}
+.all-menu .all-menu__table .category-menu .category-menu__content .content__photo {
+  grid-column: span 6;
+  grid-row: 1/span 2;
+  padding-bottom: 44px;
+}
+.all-menu .all-menu__table .category-menu .category-menu__content .content__photo .photo {
+  width: 100%;
+}
+.all-menu .all-menu__table .category-menu .category-menu__content .content__text {
+  grid-column: span 6;
+}

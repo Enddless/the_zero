@@ -1,0 +1,30 @@
+.preview-menu {
+  background: url("./image1.png") no-repeat;
+  background-position: right top;
+  padding: 286px 138px 218px;
+}
+.preview-menu .content-menu {
+  grid-column: span 6;
+}
+.preview-menu .content-menu .content-menu__title {
+  margin-bottom: 18px;
+}
+.preview-menu .content-menu .content-menu__subtitle {
+  color: #000000;
+  margin-bottom: 158px;
+}
+.preview-menu .table-menu {
+  grid-column: span 12;
+  padding: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .preview-menu {
+    padding: 286px 30px 218px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .preview-menu .content-menu {
+    grid-column: 1/span 8;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/vars.scss";
+
+.preview-menu {
+    background: url("./image1.png") no-repeat;
+    background-position: right top;
+    padding: 286px 138px 218px;
+
+    .content-menu {
+        grid-column: span 6;
+
+        .content-menu__title {
+            margin-bottom: 18px;
+        }
+
+        .content-menu__subtitle {
+            color: $black;
+            margin-bottom: 158px;
+        }
+    }
+
+    .table-menu {
+        grid-column: span 12;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .preview-menu {
+        padding: 286px 30px 218px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .preview-menu {
+        .content-menu {
+            grid-column: 1 / span 8;
+        }
+
+    }
+}

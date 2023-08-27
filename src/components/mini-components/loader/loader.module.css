@@ -1,0 +1,117 @@
+.wrapLoader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  animation: spinner-rotate 1s linear infinite;
+  -webkit-animation: spinner-rotate 1s linear infinite;
+}
+
+.spinner {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background: #fff;
+  animation: preloader-bounce 1s linear infinite;
+  -webkit-animation: preloader-bounce 1s linear infinite;
+}
+
+.one {
+  top: 0;
+  left: 13px;
+}
+
+.two {
+  top: 27px;
+  left: -4px;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.three {
+  top: 53px;
+  left: 13px;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.four {
+  top: 53px;
+  left: 41px;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.five {
+  top: 27px;
+  left: 57px;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.six {
+  top: 0;
+  left: 41px;
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
+}
+
+@-webkit-keyframes spinner-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes preloader-bounce {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes preloader-bounce {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

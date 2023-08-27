@@ -1,0 +1,41 @@
+@import "../../../styles/vars.scss";
+
+.close {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    cursor:pointer;
+
+    .close__line {
+        width: 50px;
+        height: 10px;
+        // margin: 2px 0;
+        background: $white;
+        position: relative;
+        z-index: 100;
+    }
+
+    .line-one,
+    .line-two {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+
+        transition: transform 1s ease-in-out;
+        -webkit-transition: transform 1s ease-in-out;
+        -moz-transition: transform 1s ease-in-out;
+        -ms-transition: transform 1s ease-in-out;
+        -o-transition: transform 1s ease-in-out;
+    }
+
+    .line-two {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        top: -10px;
+    }
+}

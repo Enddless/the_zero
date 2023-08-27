@@ -1,0 +1,70 @@
+@import "../../styles/vars.scss";
+
+.all-menu {
+    background: url("./image1.png") no-repeat;
+    padding-top: 208px;
+
+    .all-menu__title,
+    .all-menu__subtitle {
+        color: $white;
+        grid-column: span 12;
+    }
+
+    .all-menu__title {
+        grid-row: 1;
+        padding-top: 142px;
+        padding-bottom: 50px;
+    }
+
+    .all-menu__subtitle {
+        grid-row: 2;
+        padding-bottom: 511px;
+    }
+
+    .all-menu__table {
+        grid-column: span 12;
+        grid-row: 3;
+        background: url("./Blueberry.svg") no-repeat;
+        background-position: right top;
+
+        .category-menu {
+            padding: 0;
+            &:nth-child(3) {
+                background: url("./Avocado.svg") no-repeat;
+                background-position: right top;
+            }
+
+            .category-menu__title,
+            .category-menu__subtitle {
+                grid-column: span 12;
+                text-align: center;
+                margin: 38px 0 18px;
+            }
+
+            .category-menu__subtitle {
+                margin: 0 0 118px;
+            }
+
+            .category-menu__content {
+                grid-column: span 12;
+                padding: 82px 0 82px;
+
+                
+
+                .content__photo {
+                    grid-column: span 6;
+                    grid-row: 1/ span 2;
+                    padding-bottom: 44px;
+
+                    .photo {
+                        width: 100%;
+                    }
+                }
+
+                .content__text {
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+}

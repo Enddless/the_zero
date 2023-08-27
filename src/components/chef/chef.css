@@ -1,0 +1,51 @@
+.chef {
+  background: #EBF0E4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.chef .cook {
+  padding-top: 203px;
+}
+.chef .cook .cook-photo {
+  grid-column: span 7;
+  grid-row: 1/3;
+  position: relative;
+}
+.chef .cook .cook-photo .cook-photo__avatar {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.chef .cook .cook-photo .cook-photo__leaf {
+  position: absolute;
+  top: -39px;
+  left: -256px;
+  width: 100%;
+}
+.chef .cook .cook-info {
+  grid-column: span 5;
+  grid-row: 1;
+}
+.chef .cook .cook-info .cook-info__title {
+  margin-bottom: 18px;
+}
+.chef .cook .leaf {
+  width: 100%;
+  grid-column: 9/span 4;
+  grid-row: 2;
+  -webkit-transform: rotate(-23.312deg);
+      -ms-transform: rotate(-23.312deg);
+          transform: rotate(-23.312deg);
+}
+
+@media screen and (max-width: 1250px) {
+  .chef .cook {
+    padding: 77px 30px 8px;
+  }
+  .chef .cook .cook-photo {
+    grid-column: span 6;
+  }
+  .chef .cook .cook-info {
+    grid-column: span 6;
+  }
+}

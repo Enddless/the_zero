@@ -1,0 +1,87 @@
+.healthy {
+  background-color: #233000;
+  padding-top: 208px;
+}
+.healthy .text-container {
+  grid-column: 1/span 8;
+  grid-row: 1/2;
+}
+.healthy .text-container .text-container__title {
+  padding-top: 102px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+.healthy .text-container .text-container__subtitle {
+  width: 55%;
+  color: #fff;
+}
+.healthy .photo-container {
+  grid-column: 7/span 6;
+  grid-row: 1/2;
+}
+.healthy .photo-container .photo-container__mainphoto {
+  position: relative;
+  transform: translate(0, 24%);
+  width: 100%;
+  -webkit-transform: translate(0, 24%);
+  -moz-transform: translate(0, 24%);
+  -ms-transform: translate(0, 24%);
+  -o-transform: translate(0, 24%);
+}
+.healthy .spices-container {
+  grid-column: 4/span 7;
+  grid-row: 3;
+  width: 100%;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
+  position: relative;
+  z-index: 1;
+}
+.healthy .spices-container .spices-container__item {
+  grid-column: span 2;
+  width: 100%;
+}
+.healthy .gallery-container {
+  grid-column: span 12;
+  grid-row: 5;
+  padding: 240px 0 138px 0;
+}
+.healthy .gallery-container .gallery-container--left {
+  grid-column: 1/span 6;
+}
+.healthy .gallery-container .gallery-container--left .left-title {
+  padding: 54px 0;
+  color: #fff;
+}
+.healthy .gallery-container .gallery-container--right {
+  grid-column: 9/span 4;
+}
+.healthy .gallery-container .gallery-container__subtitle {
+  width: 90%;
+  padding-bottom: 84px;
+  color: #fff;
+}
+.healthy .gallery-container .gallery-container__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .healthy {
+    padding: 90px 30px;
+  }
+  .healthy .photo-container .photo-container__mainphoto {
+    transform: translate(0, 33%);
+    -webkit-transform: translate(0, 33%);
+    -moz-transform: translate(0, 33%);
+    -ms-transform: translate(0, 33%);
+    -o-transform: translate(0, 33%);
+  }
+  .healthy .gallery-container .gallery-container--right {
+    grid-column: 8/span 5;
+  }
+}

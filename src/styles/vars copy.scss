@@ -43,14 +43,9 @@ $font-rufina: "rufina";
         line-height: 120px;
     }
 
-    @media screen and (max-width: 1250px) {
-        font-size: 98px;
-        line-height: 110px;
-    }
-
     @media screen and (max-width: 1080px) {
         font-size: 90px;
-        line-height: 100px;
+        line-height: 120px;
     }
 }
 
@@ -69,10 +64,7 @@ $font-rufina: "rufina";
         font-size: 68px;
         line-height: 84px;
     }
-    @media screen and (max-width: 1250px) {
-        font-size: 58px;
-        line-height: 74px;
-    }
+
     @media screen and (max-width: 1080px) {
         font-size: 48px;
         line-height: 64px;
@@ -81,16 +73,9 @@ $font-rufina: "rufina";
 
 @mixin heading4 () {
     font-family: $font-rufina;
+    font-size: 48px;
     font-weight: 700;
-    @media screen and (max-width: 1920px) {
-        font-size: 48px;
-        line-height: 64px;
-    }
-
-    @media screen and (max-width: 1250px) {
-        font-size: 38px;
-        line-height: 54px;
-    }
+    line-height: 64px;
 }
 
 @mixin heading5 () {

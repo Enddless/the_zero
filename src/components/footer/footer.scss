@@ -1,0 +1,56 @@
+@import "../../styles/vars.scss";
+
+.footer {
+    background: $green;
+    color: $white;
+
+    .line-one {
+        grid-column: span 12;
+        grid-row: 1;
+        padding: 132px 0;
+
+        .logo {
+            grid-column: span 3;
+        }
+
+        .line-one__contact,
+        .line-one__sociallink {
+            grid-column: 5 / 8;
+
+
+            .contact__title {
+                text-align: center;
+                margin-bottom: 35px;
+            }
+
+            .contact__widgetstext {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .line-one__sociallink {
+            grid-column: 9 / 12;
+        }
+    }
+
+    .line-two {
+        padding: 58px 0;
+        text-align: center;
+        border-top: 4px dotted $white;
+        grid-column: span 12;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .footer {
+        padding: 63px 0 2px;
+
+        .container {
+            padding: 0 30px;
+        }
+    }
+}

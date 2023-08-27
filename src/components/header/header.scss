@@ -1,0 +1,69 @@
+@import "../../styles/vars.scss";
+
+.header {
+    background-color: transparent;
+    position:absolute;
+    // height: 208px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+
+    .logo {
+        grid-column: 1/ 4;
+    }
+
+    .menu {
+        grid-column: 6 / 13;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 26px;
+
+        .menu__item a {
+            display: block;
+        }
+
+        .telephone {
+            margin-right: 50px;
+        }
+
+    }
+
+    .drop-down {
+        background: $green;
+        background-image: url("./image.png");
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .header {
+        padding: 0 30px;
+    }
+    .header .menu .telephone {
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1142px) {}
+
+@media screen and (max-width: 1111px) {}
+
+
+@media screen and (max-width: 960px) {
+    .header .menu {
+        font-size:22px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 640px) {}
+
+@media screen and (max-width: 620px) {}
+
+@media screen and (max-width: 505px) {}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 375px) {}

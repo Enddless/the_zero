@@ -1,8 +1,246 @@
-body {
+@font-face {
+  font-family: "lato-bold";
+  src: url("./fonts/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "lato-regular";
+  src: url("./fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "rufina";
+  src: url("./fonts/Rufina-Bold.ttf");
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "lato-regular";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/********** LINKS **********/
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:link {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: stretch;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  padding: 0 138px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image-preview {
+  width: 70%;
+}
+
+/********** BUTTONS **********/
+.btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 20px 46px;
+}
+
+.btn--reserv {
+  font-size: 32px;
+  font-family: "rufina";
+}
+
+.btn--more {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: transparent;
+}
+
+.btn--olive {
+  padding: 10px 30px;
+  background: #5E6600;
+  border: none;
+}
+
+.btn--green {
+  background: #233000;
+  grid-column: 5/9;
+  border-radius: 230px;
+}
+
+/********** TEXT STYLE **********/
+.largeTitle {
+  color: #fff;
+  font-family: "rufina";
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .largeTitle {
+    font-size: 148px;
+    line-height: 152px;
+  }
+}
+@media screen and (max-width: 1552px) {
+  .largeTitle {
+    font-size: 135px;
+  }
+}
+@media screen and (max-width: 1475px) {
+  .largeTitle {
+    font-size: 100px;
+  }
+}
+
+.heading1 {
+  font-family: "rufina";
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .heading1 {
+    font-size: 108px;
+    line-height: 120px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .heading1 {
+    font-size: 98px;
+    line-height: 110px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .heading1 {
+    font-size: 90px;
+    line-height: 100px;
+  }
+}
+
+.heading2 {
+  font-family: "rufina";
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.heading3 {
+  font-family: "rufina";
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .heading3 {
+    font-size: 68px;
+    line-height: 84px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .heading3 {
+    font-size: 58px;
+    line-height: 74px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .heading3 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+.heading4 {
+  font-family: "rufina";
+  font-weight: 700;
+}
+@media screen and (max-width: 1920px) {
+  .heading4 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .heading4 {
+    font-size: 38px;
+    line-height: 54px;
+  }
+}
+
+.heading5 {
+  font-family: "rufina";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.heading6 {
+  font-family: "rufina";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.heading7 {
+  font-family: "rufina";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 126%;
+}
+
+.body {
+  font-family: "lato-regular";
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 0.48px;
+}
+
+.excerpt {
+  font-family: "lato-regular";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30.8px;
+  letter-spacing: 0.44px;
+}
+
+.widgetstext {
+  font-family: "lato-regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+@media screen and (max-width: 960px) {
+  .btn--reserv {
+    font-size: 22px;
+  }
 }

@@ -1,0 +1,38 @@
+.features {
+  padding: 207px 138px 190px;
+}
+.features .features__iconbox {
+  grid-column: span 4;
+  text-align: center;
+}
+.features .features__iconbox .iconbox__circle {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EBF0E4;
+  border-radius: 260px;
+}
+.features .features__iconbox .iconbox__title {
+  margin: 39px 0;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 1250px) {
+  .features {
+    padding: 207px 30px 190px;
+  }
+  .features .features__iconbox .iconbox__circle {
+    width: 159px;
+    height: 159px;
+    border-radius: 78px;
+  }
+}

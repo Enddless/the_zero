@@ -1,0 +1,56 @@
+.footer {
+  background: #233000;
+  color: #fff;
+}
+.footer .line-one {
+  grid-column: span 12;
+  grid-row: 1;
+  padding: 132px 0;
+}
+.footer .line-one .logo {
+  grid-column: span 3;
+}
+.footer .line-one .line-one__contact,
+.footer .line-one .line-one__sociallink {
+  grid-column: 5/8;
+}
+.footer .line-one .line-one__contact .contact__title,
+.footer .line-one .line-one__sociallink .contact__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.footer .line-one .line-one__contact .contact__widgetstext,
+.footer .line-one .line-one__sociallink .contact__widgetstext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.footer .line-one .line-one__sociallink {
+  grid-column: 9/12;
+}
+.footer .line-two {
+  padding: 58px 0;
+  text-align: center;
+  border-top: 4px dotted #fff;
+  grid-column: span 12;
+}
+
+@media screen and (max-width: 1250px) {
+  .footer {
+    padding: 63px 0 2px;
+  }
+  .footer .container {
+    padding: 0 30px;
+  }
+}
