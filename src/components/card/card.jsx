@@ -1,6 +1,10 @@
 import './card.css';
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { getCategory } from '../../firebase/category'
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 function Card() {
@@ -16,6 +20,43 @@ function Card() {
     fetchPreview();
   }, []);
 
+  //********** НАСТРОЙКИ СЛАЙДЕРА **********
+  const settings = {
+    dots: true,
+    infinite: false,
+    variableWidth: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 1,
+    rows: 1,
+    responsive: [
+      {
+        breakpoint: 1309,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <section className="cards-container container">
@@ -23,16 +64,19 @@ function Card() {
         <h1 className="card-info__title heading1">Catalog</h1>
         <p className="card-info__subtitle body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
-      <div className="card-group container">
-        {Object.values(cat).map((value) => {
-          return (
-            <div key={value.id}
-              className="card-group__item overlay">
-              <img src={value.imagePreview} alt={value.name} className="image" />
-              <h4 className="card__name heading4">{value.name}</h4>
-            </div>
-          )
-        })}
+      <div className="card-group ">
+        <Slider {...settings} className="">
+          {Object.values(cat).map((value) => {
+            return (
+              <div key={value.id}
+                className="card-group__item overlay">
+                <img src={value.imagePreview} alt={value.name} className="image" />
+                <h4 className="card__name heading4">{value.name}</h4>
+              </div>
+            )
+          })}
+        </Slider>
+
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { db } from './firebase.config'
-import { collection, query, where, getDocs, limit} from "firebase/firestore";
+import { collection, query, getDocs, limit} from "firebase/firestore";
 
 
 const getCategory = async (num) => {

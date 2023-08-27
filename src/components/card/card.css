@@ -1,5 +1,6 @@
 .cards-container {
   padding: 128px 138px 138px;
+  overflow: hidden;
 }
 .cards-container .card-info {
   grid-column: span 12;
@@ -17,18 +18,22 @@
   grid-row: 2;
   padding: 0;
 }
-.cards-container .card-group .card-group__item {
-  grid-column: span 4;
-  position: relative;
-  background: url("../blog/icon_arrow-right.svg") no-repeat;
-  background-position: right bottom;
-  z-index: 100;
-  cursor: pointer;
+.cards-container .card-group .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.cards-container .card-group .card-group__item:hover {
+.cards-container .card-group .slick-slide {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.cards-container .card-group .slick-slide:hover {
   color: #fff;
 }
-.cards-container .card-group .card-group__item .card__name {
+.cards-container .card-group .slick-slide:last-child {
+  margin-right: 0;
+}
+.cards-container .card-group .slick-slide .card__name {
   position: absolute;
   top: 40px;
   left: 40px;

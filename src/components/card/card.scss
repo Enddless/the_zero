@@ -2,6 +2,7 @@
 
 .cards-container {
     padding: 128px 138px 138px;
+    overflow: hidden;
 
     .card-info {
         grid-column: span 12;
@@ -22,16 +23,21 @@
         grid-row: 2;
         padding: 0;
 
-        .card-group__item {
-            grid-column: span 4;
-            position: relative;
-            background: url("../blog/icon_arrow-right.svg") no-repeat;
-            background-position: right bottom;
-            z-index: 100;
+        .slick-track {
+             display:flex;
+        }
+
+        
+        .slick-slide {
+            // grid-column: span 4;
             cursor: pointer;
+            margin-right:30px;
 
             &:hover {
                 color: $white;
+            }
+            &:last-child {
+                margin-right:0;
             }
 
             .card__name {
@@ -43,6 +49,8 @@
                 // transform: translate(-50%, -50%);
             }
         }
+        
+
 
         .overlay {
             position: relative;
