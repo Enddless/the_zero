@@ -3,7 +3,7 @@
 .table-menu__item {
     grid-column: span 6;
     margin: 17px 0;
-    cursor:pointer;
+    cursor: pointer;
 
     .item__price {
         text-align: right;
@@ -18,5 +18,30 @@
 
     .item__subtitle {
         min-height: 155px;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .table-menu__item {
+
+        .item__title {
+            min-height: 190px;
+        }
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .table-menu__item {
+        grid-column: span 12;
+
+        .item__title,
+        .item__subtitle {
+            min-height: 30px;
+            margin: 10px 0;
+        }
+
+        .item__subtitle {
+            margin-bottom:20px;
+        }
     }
 }

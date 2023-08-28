@@ -15,3 +15,22 @@
 .table-menu__item .item__subtitle {
   min-height: 155px;
 }
+
+@media screen and (max-width: 806px) {
+  .table-menu__item .item__title {
+    min-height: 190px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .table-menu__item {
+    grid-column: span 12;
+  }
+  .table-menu__item .item__title,
+  .table-menu__item .item__subtitle {
+    min-height: 30px;
+    margin: 10px 0;
+  }
+  .table-menu__item .item__subtitle {
+    margin-bottom: 20px;
+  }
+}

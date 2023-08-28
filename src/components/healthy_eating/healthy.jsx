@@ -10,18 +10,19 @@ import spices3 from "./spices3.png"
 function Healthy() {
     return (
         <section className="container healthy">
-            <div className="text-container">
+            <div className="text-container ">
                 <h1 className="text-container__title largeTitle">Healthy Eating is important part of lifestyle</h1>
                 <p className="text-container__subtitle body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
             </div>
             <div className="photo-container">
                 <img src={image1} alt="mainphoto" className="photo-container__mainphoto" />
+                <div className="spices-container">
+                    <img src={spices1} alt="spices1" className="spices-container__item" />
+                    <img src={spices2} alt="spices2" className="spices-container__item" />
+                    <img src={spices3} alt="spices3" className="spices-container__item" />
+                </div>
             </div>
-            <div className="spices-container">
-                <img src={spices1} alt="spices1" className="spices-container__item" />
-                <img src={spices2} alt="spices2" className="spices-container__item" />
-                <img src={spices3} alt="spices3" className="spices-container__item" />
-            </div>
+
             <div className="gallery-container container">
                 <div className="gallery-container--left">
                     <img src={image2} alt="" className="gallery-container__image" />

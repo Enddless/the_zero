@@ -45,6 +45,7 @@ function MenuPage() {
                         const menu = Object.values(menus).filter(value => value.type === item.id)
                         return (
                             <div key={item.id}
+                                id={item.id}
                                 className="category-menu container"
                             >
                                 <h1 className="category-menu__title heading1">{item.name}</h1>

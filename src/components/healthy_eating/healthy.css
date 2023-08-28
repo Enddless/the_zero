@@ -30,9 +30,6 @@
   -o-transform: translate(0, 24%);
 }
 .healthy .spices-container {
-  grid-column: 4/span 7;
-  grid-row: 3;
-  width: 100%;
   padding: 0 30px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -40,6 +37,8 @@
      -moz-column-gap: 44px;
           column-gap: 44px;
   position: relative;
+  bottom: -100px;
+  left: -100px;
   z-index: 1;
 }
 .healthy .spices-container .spices-container__item {
@@ -81,7 +80,82 @@
     -ms-transform: translate(0, 33%);
     -o-transform: translate(0, 33%);
   }
+  .healthy .gallery-container .gallery-container--left {
+    grid-column: 1/span 7;
+  }
   .healthy .gallery-container .gallery-container--right {
     grid-column: 8/span 5;
+  }
+}
+@media screen and (max-width: 1048px) {
+  .healthy {
+    padding: 90px 30px;
+  }
+  .healthy .photo-container {
+    grid-column: 6/span 7;
+  }
+}
+@media screen and (max-width: 806px) {
+  .healthy .gallery-container {
+    padding: 183px 0 47px 0;
+  }
+}
+@media screen and (max-width: 675px) {
+  .healthy .photo-container {
+    grid-column: 6/span 6;
+  }
+}
+@media screen and (max-width: 571px) {
+  .healthy .text-container {
+    grid-column: span 12;
+  }
+  .healthy .text-container .text-container__title {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .healthy .text-container .text-container__subtitle {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .healthy .photo-container {
+    grid-column: span 12;
+    grid-row: 2;
+  }
+  .healthy .photo-container .photo-container__mainphoto {
+    position: static;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .healthy .spices-container {
+    bottom: 72px;
+    left: 0;
+  }
+  .healthy .gallery-container {
+    padding: 1px 0 47px 0;
+  }
+  .healthy .gallery-container .gallery-container--left,
+  .healthy .gallery-container .gallery-container--right {
+    grid-column: span 12;
+    grid-row: 1;
+  }
+  .healthy .gallery-container .gallery-container--right {
+    grid-row: 2;
+  }
+  .healthy .gallery-container .left-title {
+    text-align: center;
+  }
+  .healthy .gallery-container .gallery-container__subtitle {
+    text-align: justify;
+    width: 100%;
+    padding-bottom: 44px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .healthy {
+    padding: 90px 10px;
   }
 }

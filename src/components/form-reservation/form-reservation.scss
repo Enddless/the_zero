@@ -16,9 +16,11 @@
 
     .reservation-form {
         grid-column: span 12;
+        padding: 0;
 
         .reservation-form__input {
             grid-column: span 6;
+            width: 100%;
             padding: 30px 40px;
             border-radius: 220px;
             -webkit-border-radius: 220px;
@@ -27,6 +29,7 @@
             -o-border-radius: 220px;
             margin-bottom: 133px;
         }
+
         .btngreentext {
             color: $white;
         }
@@ -37,8 +40,40 @@
 @media screen and (max-width: 1250px) {
     .reservation {
         padding: 141px 0;
+
         .container {
             padding: 0 30px;
         }
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .reservation {
+        .reservation-form {
+            padding: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .reservation {
+        padding: 54px 0;
+
+        .reservation-head {
+            margin-bottom: 70px;
+        }
+        .reservation-form {
+           .reservation-form__input {
+            grid-column: span 12;
+            margin-bottom: 33px;
+           }
+
+           .btn--green {
+            grid-column: span 12;
+           }
+        }
+
     }
 }

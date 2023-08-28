@@ -14,13 +14,17 @@ $font-lato-bold: "lato-bold";
 $font-lato-regular: "lato-regular";
 $font-rufina: "rufina";
 
+//TEXT DECORATION
+$text-align-center: center;
+$justify-content: justify;
+
 //HEADING
 @mixin largeTitle () {
     color: $white;
     font-family: $font-rufina;
     font-weight: 700;
 
-    @media screen and (max-width: 1920px) {
+    @media screen and (max-width: 2000px) {
         font-size: 148px;
         line-height: 152px;
     }
@@ -32,13 +36,37 @@ $font-rufina: "rufina";
     @media screen and (max-width: 1475px) {
         font-size: 100px;
     }
+
+    @media screen and (max-width: 1369px) {
+        font-size: 95px;
+        line-height: 145px;
+    }
+
+    @media screen and (max-width: 1117px) {
+        font-size: 90px;
+        line-height: 142px;
+    }
+
+    @media screen and (max-width: 1014px) {
+        font-size: 60px;
+        line-height: 102px;
+    }
+
+    @media screen and (max-width: 805px) {
+        font-size: 45px;
+        line-height: 70px;
+    }
+    @media screen and (max-width: 748px) {
+        font-size: 38px;
+        line-height: 50px;
+    }
 }
 
 @mixin heading1 () {
     font-family: $font-rufina;
     font-weight: 700;
 
-    @media screen and (max-width: 1920px) {
+    @media screen and (max-width: 2000px) {
         font-size: 108px;
         line-height: 120px;
     }
@@ -51,6 +79,15 @@ $font-rufina: "rufina";
     @media screen and (max-width: 1080px) {
         font-size: 90px;
         line-height: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 40px;
+        line-height: 100px;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 28px;
+        line-height: 50px;
     }
 }
 
@@ -65,24 +102,40 @@ $font-rufina: "rufina";
     font-family: $font-rufina;
     font-weight: 700;
 
-    @media screen and (max-width: 1920px) {
+    @media screen and (max-width: 2000px) {
         font-size: 68px;
         line-height: 84px;
     }
+
+    @media screen and (max-width: 1368px) {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
     @media screen and (max-width: 1250px) {
         font-size: 58px;
         line-height: 74px;
     }
+
     @media screen and (max-width: 1080px) {
         font-size: 48px;
         line-height: 64px;
+    }
+    @media screen and (max-width: 748px) {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 28px;
+        line-height: 40px;
     }
 }
 
 @mixin heading4 () {
     font-family: $font-rufina;
     font-weight: 700;
-    @media screen and (max-width: 1920px) {
+
+    @media screen and (max-width: 2000px) {
         font-size: 48px;
         line-height: 64px;
     }
@@ -90,6 +143,10 @@ $font-rufina: "rufina";
     @media screen and (max-width: 1250px) {
         font-size: 38px;
         line-height: 54px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 28px;
+        line-height: 44px;
     }
 }
 
@@ -127,6 +184,10 @@ $font-rufina: "rufina";
     font-size: 24px;
     line-height: 33.6px;
     letter-spacing: 0.48px;
+    @media screen and (max-width: 511px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 @mixin excerpt () {

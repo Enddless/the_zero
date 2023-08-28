@@ -25,7 +25,10 @@ function Card() {
     dots: true,
     infinite: false,
     variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 3500,
     speed: 500,
+    draggable: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 1,
@@ -37,24 +40,17 @@ function Card() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,
-          dots: false
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 1
         }
-      }
+      },
+
     ]
   };
 
@@ -68,11 +64,13 @@ function Card() {
         <Slider {...settings} className="">
           {Object.values(cat).map((value) => {
             return (
-              <div key={value.id}
-                className="card-group__item overlay">
-                <img src={value.imagePreview} alt={value.name} className="image" />
-                <h4 className="card__name heading4">{value.name}</h4>
-              </div>
+              <a href={`/menu/#${value.id}`}>
+                <div key={value.id}
+                  className="card-group__item overlay">
+                  <img src={value.imagePreview} alt={value.name} className="image" />
+                  <h4 className="card__name heading4">{value.name}</h4>
+                </div>
+              </a>
             )
           })}
         </Slider>

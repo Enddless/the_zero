@@ -50,6 +50,8 @@ li {
      -moz-column-gap: 60px;
           column-gap: 60px;
   padding: 0 138px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .image {
@@ -79,7 +81,7 @@ li {
 }
 
 .btn--more {
-  padding: 20px 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +90,9 @@ li {
       -ms-flex-direction: row;
           flex-direction: row;
   background: transparent;
+  position: absolute;
+  bottom: -31px;
+  left: 0;
 }
 
 .btn--olive {
@@ -108,7 +113,7 @@ li {
   font-family: "rufina";
   font-weight: 700;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .largeTitle {
     font-size: 148px;
     line-height: 152px;
@@ -124,12 +129,42 @@ li {
     font-size: 100px;
   }
 }
+@media screen and (max-width: 1369px) {
+  .largeTitle {
+    font-size: 95px;
+    line-height: 145px;
+  }
+}
+@media screen and (max-width: 1117px) {
+  .largeTitle {
+    font-size: 90px;
+    line-height: 142px;
+  }
+}
+@media screen and (max-width: 1014px) {
+  .largeTitle {
+    font-size: 60px;
+    line-height: 102px;
+  }
+}
+@media screen and (max-width: 805px) {
+  .largeTitle {
+    font-size: 45px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 748px) {
+  .largeTitle {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
 
 .heading1 {
   font-family: "rufina";
   font-weight: 700;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .heading1 {
     font-size: 108px;
     line-height: 120px;
@@ -147,6 +182,18 @@ li {
     line-height: 100px;
   }
 }
+@media screen and (max-width: 600px) {
+  .heading1 {
+    font-size: 40px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heading1 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+}
 
 .heading2 {
   font-family: "rufina";
@@ -159,10 +206,16 @@ li {
   font-family: "rufina";
   font-weight: 700;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .heading3 {
     font-size: 68px;
     line-height: 84px;
+  }
+}
+@media screen and (max-width: 1368px) {
+  .heading3 {
+    font-size: 60px;
+    line-height: 80px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -177,12 +230,24 @@ li {
     line-height: 64px;
   }
 }
+@media screen and (max-width: 748px) {
+  .heading3 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heading3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
 
 .heading4 {
   font-family: "rufina";
   font-weight: 700;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .heading4 {
     font-size: 48px;
     line-height: 64px;
@@ -192,6 +257,12 @@ li {
   .heading4 {
     font-size: 38px;
     line-height: 54px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading4 {
+    font-size: 28px;
+    line-height: 44px;
   }
 }
 
@@ -222,6 +293,12 @@ li {
   line-height: 33.6px;
   letter-spacing: 0.48px;
 }
+@media screen and (max-width: 511px) {
+  .body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 
 .excerpt {
   font-family: "lato-regular";
@@ -242,5 +319,28 @@ li {
 @media screen and (max-width: 960px) {
   .btn--reserv {
     font-size: 22px;
+  }
+  .container {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .container {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .btn--more {
+    position: static;
+    margin-bottom: 67px;
+  }
+}
+@media screen and (max-width: 471px) {
+  .container {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 }

@@ -23,7 +23,7 @@
 }
 .blog .post .post__subtitle {
   padding: 18px 0 49px;
-  height: 240px;
+  min-height: 240px;
 }
 .blog .post .btnmore--padding {
   padding-right: 10px;
@@ -35,5 +35,29 @@
 @media screen and (max-width: 1250px) {
   .blog {
     padding: 130px 30px 105px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .blog {
+    padding: 0 30px 70px;
+  }
+  .blog .post {
+    grid-column: span 12;
+  }
+  .blog .post .post__photo {
+    margin-bottom: 16px;
+  }
+  .blog .post .post__title {
+    height: 140px;
+    padding-bottom: 0;
+    text-align: justify;
+  }
+  .blog .post .post__subtitle {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 375px) {
+  .blog {
+    padding: 0 10px 70px;
   }
 }

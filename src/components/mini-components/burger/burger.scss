@@ -16,3 +16,9 @@
     background: $white;
     border-radius: 2px;
 }
+
+@media screen and (max-width: 571px) {
+    .burger {
+        grid-column: 12;
+    }
+}

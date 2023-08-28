@@ -51,6 +51,29 @@
     padding: 63px 0 2px;
   }
   .footer .container {
-    padding: 0 30px;
+    padding: 0 30px 30px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .footer {
+    padding: 63px 0 2px;
+  }
+  .footer .container {
+    padding: 0 30px 30px;
+  }
+  .footer .line-one .logo {
+    grid-column: span 12;
+    grid-row: 1;
+    margin-bottom: 55px;
+  }
+  .footer .line-one .line-one__contact,
+  .footer .line-one .line-one__sociallink {
+    grid-column: span 6;
+    grid-row: 2;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer .container {
+    padding: 0 10px 30px;
   }
 }

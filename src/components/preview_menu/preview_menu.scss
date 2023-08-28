@@ -38,3 +38,23 @@
 
     }
 }
+
+@media screen and (max-width: 571px) {
+    .preview-menu {
+        padding: 39px 30px 39px;
+
+        .content-menu {
+            grid-column: span 12;
+
+            .content-menu__subtitle {
+                margin-bottom: 58px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .preview-menu {
+        padding: 39px 10px 39px;
+    }
+}
