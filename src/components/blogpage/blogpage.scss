@@ -1,0 +1,58 @@
+@import "../../styles/vars.scss";
+@import "../blog/blog.css";
+
+.blog-block {
+    background: url("./image1.png") no-repeat;
+    background-size: contain;
+    padding-top: 208px;
+
+    .blog-block__title,
+    .blog-block__subtitle {
+        color: $white;
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    .blog-block__title {
+        grid-row: 1;
+        padding-top: 142px;
+        padding-bottom: 30px;
+
+    }
+
+    .blog-block__subtitle {
+        grid-row: 2;
+        padding-bottom: 269px;
+    }
+
+    .blog-block__table {
+        grid-column: span 12;
+        grid-row: 3;
+
+
+        .post {
+            grid-column: span 12;
+            margin-bottom: 100px;
+
+            .post__title {
+                height: 170px;
+            }
+
+            .post__subtitle {
+                min-height: 1px;
+            }
+
+            .btn--more {
+                position: static;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .blog-block {
+        padding: 142px 30px 0;
+    }
+}

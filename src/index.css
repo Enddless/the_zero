@@ -197,9 +197,37 @@ li {
 
 .heading2 {
   font-family: "rufina";
-  font-size: 88px;
   font-weight: 700;
-  line-height: 120%;
+}
+@media screen and (max-width: 2000px) {
+  .heading2 {
+    font-size: 88px;
+    line-height: 106px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .heading2 {
+    font-size: 78px;
+    line-height: 96px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .heading2 {
+    font-size: 58px;
+    line-height: 76px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heading2 {
+    font-size: 28px;
+    line-height: 50px;
+  }
 }
 
 .heading3 {
@@ -268,9 +296,37 @@ li {
 
 .heading5 {
   font-family: "rufina";
-  font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+}
+@media screen and (max-width: 2000px) {
+  .heading5 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .heading5 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .heading5 {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading5 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heading5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .heading6 {

@@ -1,12 +1,14 @@
 import './burger.css';
+import { useState } from 'react'
 
-function Burger(showBurger) {
+function Burger(props) {
   return (
-      <div className="burger">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+    <div
+      className="burger">
+      <div className="line"></div>
+      <div className="line"></div>
+      <div className="line"></div>
+    </div>
   );
 }
 

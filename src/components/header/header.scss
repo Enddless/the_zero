@@ -2,13 +2,21 @@
 
 .header {
     background-color: transparent;
-    position:absolute;
+    position: absolute;
     // height: 208px;
     padding-top: 47px;
     padding-bottom: 47px;
 
     .logo {
         grid-column: 1/ 4;
+    }
+
+    .block-burger {
+        grid-column: 5/span 1;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .menu {
@@ -30,8 +38,22 @@
     }
 
     .drop-down {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
         background: $green;
-        background-image: url("./image.png");
+        background: url("./image.png") no-repeat;
+        background-size: cover;
+        width: 100%;
+
+        .menu {
+            flex-direction: column;
+
+            .menu__item {
+                margin: 20px 0;
+            }
+        }
     }
 }
 
@@ -39,6 +61,7 @@
     .header {
         padding: 30px;
     }
+
     .header .menu .telephone {
         margin-right: 10px;
     }
@@ -46,20 +69,35 @@
 
 @media screen and (max-width: 960px) {
     .header .menu {
-        font-size:22px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
         .menu {
-            display:none;
+            display: none;
+        }
+
+        .block-burger {
+            grid-column: 12;
+        }
+
+        .drop-down {
+            .menu {
+                display: flex;
+            }
         }
     }
 }
 
 @media screen and (max-width: 571px) {
-
+    .header {
+        .close {
+            top:30px;
+            right:30px;
+        }
+    }
 }
 
 

@@ -64,7 +64,7 @@ function Card() {
         <Slider {...settings} className="">
           {Object.values(cat).map((value) => {
             return (
-              <a href={`/menu/#${value.id}`}>
+              <a href={`/menu/#${value.id}`} key={value.id}>
                 <div key={value.id}
                   className="card-group__item overlay">
                   <img src={value.imagePreview} alt={value.name} className="image" />

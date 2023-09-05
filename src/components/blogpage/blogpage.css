@@ -1,0 +1,44 @@
+@import "../blog/blog.css";
+.blog-block {
+  background: url("./image1.png") no-repeat;
+  background-size: contain;
+  padding-top: 208px;
+}
+.blog-block .blog-block__title,
+.blog-block .blog-block__subtitle {
+  color: #fff;
+  grid-column: span 12;
+  text-align: center;
+}
+.blog-block .blog-block__title {
+  grid-row: 1;
+  padding-top: 142px;
+  padding-bottom: 30px;
+}
+.blog-block .blog-block__subtitle {
+  grid-row: 2;
+  padding-bottom: 269px;
+}
+.blog-block .blog-block__table {
+  grid-column: span 12;
+  grid-row: 3;
+}
+.blog-block .blog-block__table .post {
+  grid-column: span 12;
+  margin-bottom: 100px;
+}
+.blog-block .blog-block__table .post .post__title {
+  height: 170px;
+}
+.blog-block .blog-block__table .post .post__subtitle {
+  min-height: 1px;
+}
+.blog-block .blog-block__table .post .btn--more {
+  position: static;
+}
+
+@media screen and (max-width: 1250px) {
+  .blog-block {
+    padding: 142px 30px 0;
+  }
+}
