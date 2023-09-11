@@ -38,6 +38,10 @@
   -webkit-animation: preloader-bounce 1s linear infinite;
 }
 
+.postdetails-page .spinner {
+  background: #233000;
+}
+
 .one {
   top: 0;
   left: 13px;

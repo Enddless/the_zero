@@ -1,16 +1,16 @@
-import css from '../loader/loader.module.css'
+import '../loader/loader.css'
 
 const Loader = (props) => {
 
     return (
-        <div className={css.container}>
-            <div className={css.wrapLoader}>
-                <div className={` ${css.spinner} ${css.one}`}></div>
-                <div className={` ${css.spinner} ${css.two}`}></div>
-                <div className={` ${css.spinner} ${css.three}`}></div>
-                <div className={` ${css.spinner} ${css.four}`}></div>
-                <div className={` ${css.spinner} ${css.five}`}></div>
-                <div className={` ${css.spinner} ${css.six}`}></div>
+        <div className="container">
+            <div className="wrapLoader">
+                <div className="spinner one"></div>
+                <div className="spinner two"></div>
+                <div className="spinner three"></div>
+                <div className="spinner four"></div>
+                <div className="spinner five"></div>
+                <div className="spinner six"></div>
             </div>
         </div>
     );

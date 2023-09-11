@@ -3,57 +3,25 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.blog .post {
-  grid-column: span 6;
-  position: relative;
-}
-.blog .post .btn--olive {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.blog .post .post__photo {
-  width: 100%;
-  margin-bottom: 68px;
-}
-.blog .post .post__title {
-  padding-bottom: 18px;
-  border-bottom: 4px dotted #000000;
-  height: 214px;
-}
-.blog .post .post__subtitle {
-  padding: 18px 0 49px;
-  min-height: 240px;
-}
-.blog .post .btnmore--padding {
-  padding-right: 10px;
-}
-.blog .post .btnolivetext {
-  color: #fff;
-}
 
 @media screen and (max-width: 1250px) {
   .blog {
     padding: 130px 30px 105px;
   }
 }
+@media screen and (max-width: 984px) {
+  .blog {
+    padding: 100px 30px 105px;
+  }
+}
+@media screen and (max-width: 779px) {
+  .blog {
+    padding: 60px 30px 105px;
+  }
+}
 @media screen and (max-width: 571px) {
   .blog {
     padding: 0 30px 70px;
-  }
-  .blog .post {
-    grid-column: span 12;
-  }
-  .blog .post .post__photo {
-    margin-bottom: 16px;
-  }
-  .blog .post .post__title {
-    height: 140px;
-    padding-bottom: 0;
-    text-align: justify;
-  }
-  .blog .post .post__subtitle {
-    text-align: justify;
   }
 }
 @media screen and (max-width: 375px) {

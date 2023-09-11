@@ -1,0 +1,24 @@
+@import "../../../styles/vars.scss";
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5 / span 1;
+    cursor: pointer;
+}
+
+.line {
+    width: 24px;
+    height: 2px;
+    margin: 3px 0;
+    background: $white;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 571px) {
+    .burger {
+        grid-column: 12;
+    }
+}

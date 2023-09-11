@@ -8,8 +8,10 @@ import Header from '../header/header';
 import Healthy from '../healthy_eating/healthy';
 import PreviewMenu from '../preview_menu/preview_menu';
 import './homepage.css';
+import { useState  } from 'react'
 
 function Homepage() {
+    const [limit, setlimit] = useState(2);
     return (
         <section className="homepage">
             <Header />
@@ -17,7 +19,7 @@ function Homepage() {
             <PreviewMenu />
             <Chef />
             <Features />
-            <Blog />
+            <Blog limit={limit}/>
             <FormReservation />
             <Card />
             <Footer />

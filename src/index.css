@@ -107,6 +107,10 @@ li {
   border-radius: 230px;
 }
 
+.btn--transparent {
+  background: transparent;
+}
+
 /********** TEXT STYLE **********/
 .largeTitle {
   color: #fff;

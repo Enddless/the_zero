@@ -1,0 +1,82 @@
+@import "../../styles/vars.scss";
+
+.blog {
+    padding: 130px 138px 105px;
+    box-sizing: border-box;
+
+
+    .post {
+        grid-column: span 6;
+        position: relative;
+
+        .btn--olive {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .post__photo {
+            width: 100%;
+            margin-bottom: 68px;
+        }
+
+        .post__title {
+            padding-bottom: 18px;
+            border-bottom: 4px dotted $black;
+            height: 214px;
+            color: $black;
+        }
+
+        .post__subtitle {
+            padding: 18px 0 49px;
+            min-height: 240px;
+            color: $black;
+        }
+
+        .btnmore--padding {
+            padding-right: 10px;
+        }
+
+        .btnolivetext {
+            color: $white;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .blog {
+        padding: 130px 30px 105px;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .blog {
+        padding: 0 30px 70px;
+
+        .post {
+            grid-column: span 12;
+
+            .post__photo {
+                margin-bottom: 16px;
+            }
+
+            .post__title {
+                height: 140px;
+                padding-bottom: 0;
+                text-align: $justify-content;
+            }
+
+            .post__subtitle {
+                text-align: $justify-content;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .blog {
+        padding: 0 10px 70px;
+
+    }
+}
