@@ -11,8 +11,8 @@ function Healthy() {
     return (
         <section className="container healthy">
             <div className="text-container ">
-                <h1 className="text-container__title largeTitle">Healthy Eating is important part of lifestyle</h1>
-                <p className="text-container__subtitle body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
+                <h1 className="text-container__title largeTitle"> Healthy Eating is important part of lifestyle</h1>
+                <p className="text-container__subtitle body">Layout found online, all characters are fictional.</p>
             </div>
             <div className="photo-container">
                 <img src={image1} alt="mainphoto" className="photo-container__mainphoto" />
