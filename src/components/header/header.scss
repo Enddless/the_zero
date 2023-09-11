@@ -6,6 +6,7 @@
     // height: 208px;
     padding-top: 47px;
     padding-bottom: 47px;
+    z-index:100;
 
     .logo {
         grid-column: 1/ 4;
@@ -41,9 +42,9 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 1000;
         background: $green;
-        background: url("./image.png") no-repeat;
+        background: url("./image.jpg") no-repeat;
         background-size: cover;
         width: 100%;
 
