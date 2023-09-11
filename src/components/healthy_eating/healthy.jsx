@@ -1,7 +1,7 @@
 import './healthy.css';
-import image1 from "./image1.png"
-import image2 from "./image2.png"
-import image3 from "./image3.png"
+import image1 from "./image1.jpg"
+import image2 from "./image2.jpg"
+import image3 from "./image3.jpg"
 import spices1 from "./spices1.png"
 import spices2 from "./spices2.png"
 import spices3 from "./spices3.png"
